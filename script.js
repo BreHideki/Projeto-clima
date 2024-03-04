@@ -55,3 +55,14 @@ function clearInfo() {
     document.querySelector('.resultado').style.display='none';
 }
 
+
+const images = document.querySelectorAll('.background-image');
+let currentImageIndex = 0;
+
+function changeBackground() {
+    images[currentImageIndex].classList.remove('active');
+    currentImageIndex = (currentImageIndex + 1) % images.length;
+    images[currentImageIndex].classList.add('active');
+}
+
+setInterval(changeBackground, 5000);
