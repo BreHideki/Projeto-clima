@@ -54,3 +54,4 @@ function clearInfo() {
     showWarning("");
     document.querySelector('.resultado').style.display='none';
 }
+
